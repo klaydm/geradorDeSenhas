@@ -5,14 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
   <title>Gerador de Senhas</title>
 </head>
 <body>
-  <h1>Gerador de Senhas</h1>
-  <p>Crie senhas fortes e seguras com nosso gerador de senha</p>
-  <input type="text" name="password" id="password">
+  <main>
+    <section class="info">
+      <h1 class="title">Gerador de Senhas</h1>
+      <p class="subtitle">Crie senhas fortes e seguras com nosso gerador de senha</p>
+    </section>
+    <section class="box">
+      <div class="password">
+        <div class="text">
+          <input type="text" name="password" class="password-large" id="password">
+        </div>
+        <div class="actions">
+          <button id="copy2">C</button>
+          <button id="reset">R</button>
+        </div>
+      </div>
+    </section>
   <input type="range" name="password-length" id="password-length" value="16" min="6" max="64">
   <button id="copy">Copiar Senha</button> 
+  </main>
 </body>
 <script src="script.js"></script>
 </html>
